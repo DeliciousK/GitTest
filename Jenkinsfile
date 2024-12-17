@@ -5,10 +5,10 @@ pipeline{
             steps{
                 bat 'ECHO 123 >step1.txt'
             }
-        },
-        stage("stage1"){
+        }
+        stage("stage2"){
             steps{
-                bat 'ECHO 123 >step1.txt'
+                bat 'ECHO 123 >step2.txt'
             }
         }
     }
